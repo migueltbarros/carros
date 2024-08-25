@@ -1,7 +1,8 @@
 import google.generativeai as genai
+import os
 
 
-genai.configure(api_key='AIzaSyD__yvW-aivh5H_azG9SovpgxzWnSyiIsU')
+genai.configure(api_key= os.getenv('API_KEY'))
 
 
 def get_car_ai_bio(brand, model, year):
